@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>N</span>hi <span>N</span>guyen</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Back to Portfolio</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1> SPSS<span></span></h1>
+        <h1>
+          Project <span></span></h1>
+        <h1>Details <span></span></h1>
+        <a href="#description" type="button" class="cta">View</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <section id="description">
+    <div class="description-container">
+      <div class="description-header">
+        <h1 class="section-title">Project <span>Details</span></h1>
+      </div>
+
+    <p class="first-text" id="first-text">(This Project Is A Part Of ADMS 3511 Business Analytics Course)</p>
+
+    <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">Problem:</h2>
+    <p class="sc-text" id="sc-text"> Dale Earnhardt Jr. won the 2012 Daytona 500, the most important race of the NASCAR season. His win was
+      not so surprising because for the 2011 season he finished seventh in the point standings with 2290 points,
+      behind Tony Stewart (2403 points), Carl Edwards (2403 points), Kevin Harvick (2345 points), Matt Kenseth (2330
+      points), Brad Keselowski (2319 points), and Jimmie Johnson (2304 points). In 2011 he earned $5,633,950 by
+      winning one Pole (fastest driver in qualifying), winning three races, finishing in the top five 6 times, and
+      finishing in the top ten 19 times. File NASCAR.xlsx includes data for the 2011 season for the top 35 drivers.
+      <br>
+      Use IBM SPSS to perform the analyses asked in the following questions. Subsequently write a one-page report to
+      discuss your findings.
+      <br>
+      1. Develop an estimated regression equation that can be used to predict Winnings ($) given the number of poles
+      won (Poles), the number of wins (Wins), the number of top five finishes (Top 5), and the number of top ten
+      finishes (Top 10). Test for individual significance at a 0.05 level of significance.
+      <br>
+      2. Create two new independent variables: Top2to5 and Top6to10. Top2to5 represents the number of times the driver
+      finished between second and fifth place and Top6to10 represents the number of times the driver finished between
+      sixth and tenth place. Develop an estimated regression equation that can be used to predict Winnings ($) using
+      Poles, Wins, Top2to5, and Top6to10. Test for individual significance at a 0.05 level of significance.
+      <br>
+      3. What estimated regression equation would you recommend using.
+    </p>
+    <br>
+    <h1 style="margin-top: 50px;text-decoration:underline">Reference Resources :</h1>
+    <a href="https://drive.google.com/drive/u/2/folders/1V4FR0YmseoAtY6E4pOz3tQguq1i73MCX" target="_blank"><button type="submit" name="signupsubmit" style="max-width: 100%;
+      height: auto;
+      background-color: #0492C2;
+      color: white;
+      font-size: 1.5rem;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-weight: bold ;
+      text-align: center;
+      padding: 5px 5px;
+      border-radius: 8px;
+      cursor:pointer;
+      transition: 0.4s ease">Download</button></a>
+    <br>
+    <hr>
+    <p class="first-text" id="first-text">After inserting Excel data into SPSS and performing some analyses on SPSS:</p>
+    <br>
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px; text-decoration:underline">Dataset</h2>
+    <br>
+    <br>
+    <img src="./img/datasetS.png" alt="dataset" class="description-img" id="description-img">
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px; text-decoration:underline">Descriptions of all variables in the
+      dataset:</h2>
+    <br>
+    <br>
+    <img src="./img/variableS.png" alt="variable" class="description-img" id="description-img">
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px; text-decoration:underline">Scatter Plot:</h2>
+    <br>
+    <br>
+    <img src="./img/s1.png" alt="scatterplot" class="description-img" id="description-img">
+    <br>
+    <br>
+    <img src="./img/s2.png" alt="scatterplot" class="description-img" id="description-img">
+    <br>
+    <br>
+    <img src="./img/s3.png" alt="scatterplot" class="description-img" id="description-img">
+    <br>
+    <br>
+    <img src="./img/s4.png" alt="scatterplot" class="description-img" id="description-img">
+    <br>
+    <br>
+    <img src="./img/s5.png" alt="scatterplot" class="description-img" id="description-img">
+    <br>
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px; text-decoration:underline">Request 1:</h2><p class="sc-text" id="sc-text">Regression analysis to predict Winnings ($) given number of poles won (Poles), the number of wins
+      (Wins), the number of top five finishes (Top 5), and the number of top ten finishes (Top 10)</p>
+      <img src="./img/r1.png" alt="regression1" class="description-img" id="description-img">
+    <p class="sc-text" id="sc-text">For the first model, when testing for individual significant at a 0.05 level of significant, among Poles, Wins,
+      Top 5 and Top 10 variables, only Top 10 is significant since it has Significant value less than 0.05 in the
+      Coefficients table while others are insignificant.</p>
+    <br>
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px;text-decoration:underline">Request 2:</h2> <p class="sc-text" id="sc-text"> Regression analysis to predict Winnings ($) given number of poles won (Poles), the number of wins
+      (Wins), the number of top two to five finishes (Top2to5), and the number of top six to ten finishes (Top6to10)</p>
+      <br>
+      <br>
+      <img src="./img/r2.png" alt="regression2" class="description-img" id="description-img">
+    <br>
+    <p class="sc-text" id="sc-text">For the second model, when testing for individual significant at a 0.05 level of significant, it is evident that
+      except Poles variable, other varibles including Wins, Top 2 to 5 and Top 6 to 10 are significant and their impact
+      is significant on the dependent variable as they have Significant value less than 0.05 in the Coefficients.</p>
+    <br>
+    <br>
+    <h2 style="margin-top: 20px; margin-bottom:20px;text-decoration:underline">Request 3:</h2><p class="sc-text" id="sc-text"> Estimated regression equation to be recommended: </p>
+
+      <p class="sc-text" id="sc-text">When running 2 regression analysis for the requirements of question 1 and 2, it can be seen that
+      both models are significant and these models provide better fit than those which have no independent variables.
+      For the first model, when testing for individual significant at a 0.05 level of significance, among Poles, Wins,
+      Top 5 and Top 10 variables, only Top 10 is significant since it has Significant value less than 0.05 in the
+      Coefficients table while others are insignificant. Standardized coefficients can be used to compare the strength
+      of impact of the variables. As can be seen from the same table, this value of top 10 finishes is highest, which
+      means top 10 also has the most impact on the dependent variable. A unit increase in top 10 finishes will increase
+      Winnings ($) by 88186.274 while keeping the values of other independent variables constant. 
+      <br>
+    When breaking the Data
+      Set, creating two new independent variables Top2to5 (Top 5 substract Wins) and Top6to10 (Top 10 substract Top 5)
+      and running regression analysis to predict Winnings ($) given number of poles won (Poles), the number of wins
+      (Wins), the number of Top2to5 finishes, and the number of top six to ten finishes (Top6to10), for the second
+      model, adding two new independent variables did not make changes to the value of R, R square and Adjust R square as
+      both models have the similar values in the Model Summary table.
+    <br> When testing for individual significant at a 0.05
+      level of significance in the second model, it is evident that except Poles variable, other variables including
+      Wins, Top 2to5 finishes and Top 6to10 finishes are significant and their impact is significant on the dependent
+      variable as they have Significant values less than 0.05 in the Coefficients table. It also means that there is no
+      clear relationship between Poles and Winnings ($) and the impact of Poles on dependent variables is insignificant
+      to predict or explain the values of Winnings ($) accurately and reliability. 
+    <br>Overall, the second model is
+      recommended to predict Winnings($) than the first one. There are two reasons for that. Firstly, as mentioned
+      above, when testing for individual significant at a 0.05 level of significance, in the second model, apart from
+      Poles, other variables are significant while it can be shown from the first model that apart from Top 10 finishes,
+      other independent variables are insignificant. Almost all the independent variables in the model 2 have real and
+      significant impact on this model. Lastly, although both models bear the same values of R square and Adjust R
+      square, the independent variables are most significant and not highly correlated between the variables in the
+      second model .</p>
+      <br>
+      </div>
+    </div>
+    </div>
+    </div>
+    <hr>;
+    <!-- Contact Section -->
+    <br>
+    <section id="contact">
+      <div class="contact container">
+        <div class="contact-header">
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+1 437 235 4045</h2>
+            </div>
+          </div>
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2><a href="mailto:espernguyen97@gmail.com"><u>Mail to Nhi Nguyen</u></a></h2>
+            </div>
+          </div>
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Toronto, Ontario, Canada</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>N</span>hi <span>N</span>guyen</h1>
+        </div>
+        <br>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://github.com/espernguyen97" target="_blank"><img
+                src="https://img.icons8.com/plasticine/72/github.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="mailto:espernguyen97@gmail.com"><img src="https://img.icons8.com/clouds/344/gmail-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.linkedin.com/in/nhi-nguyen-5b808b235/" target="_blank"><img
+                src="https://img.icons8.com/color/72/linkedin.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

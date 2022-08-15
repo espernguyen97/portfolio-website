@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>N</span>hi <span>N</span>guyen</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Back to Portfolio</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Tableau <span></span></h1>
+        <h1>
+          Project <span></span></h1>
+        <h1>Details <span></span></h1>
+        <a href="#description" type="button" class="cta">View</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <section id="description">
+    <div class="description-container">
+      <div class="description-header">
+        <h1 class="section-title">Project <span>Details</span></h1>
+      </div>
+
+      <p class="first-text" id="first-text">(This Project Is A Part Of ADMS 3511 Business Analytics Course)</p>
+
+      <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">Problem:</h2>
+      <p class="sc-text" id="sc-text"> XYZ is a multinational corporation with more than 14,850 employees. XYZ has
+        decided to analyze its human resources (HR) data looking for useful insight. The attached data set includes HR
+        data for all XYZ employees. You can find a table that includes descriptions of the variables in the data set at
+        the end of this file.
+        <br>
+        Use Tableau Desktop to create the charts and the dashboard asked in the following questions. Subsequently write
+        a managerial report to discuss your findings from the charts.
+        <br>
+        1. Create a bar chart to show average “Last performance evaluation” for employees in different departments and
+        different countries. Bars for different countries should have different colors. Add single view (i.e., radio
+        button) filters for gender.
+        (Hint: Use Department as rows. Use Country and Last performance evaluation as columns).
+        <br>
+        2. Create a clustered column chart that depicts the average of “Employee's perception of competition in the
+        organization’s culture” and the average of “Employee's perception of collaboration in the organization’s
+        culture” for employees in different departments. Make sure to use different colors for “Employee's perception of
+        competition in the organization’s culture” and “Employee's perception of collaboration in the organization’s
+        culture”.
+        (Hint: use Department as columns)
+        <br>
+        3. Create a GIS that shows the average “Percent remote” and average “Employee’s satisfaction with working
+        remote” for different countries as labels. Also, countries with different levels of average “percent remote”
+        should have different colors.
+        <br>
+        4. Create a treemap that separates the employees into their “Departments” and uses size to represent each
+        department’s sum of “Number of projects”. Use both “Department” and sum of “Number of projects” as labels.
+        <br>
+        5. Create a dashboard of the charts made for questions 1 and 4 above. Make sure that the entire dashboard (i.e.,
+        both charts) can be filtered based on Gender simultaneously (i.e., with one filter).
+      </p>
+      <br>
+      <br>
+      <h2 style="margin-top: 20px; margin-bottom:10px; text-decoration:underline">Descriptions of the variables in the
+        data set</h2>
+      <br>
+      <img src="./img/varibleT.png" alt="varaible" class="description-img" id="description-img">
+      <h1 style="margin-top: 50px;text-decoration:underline">Reference Resources:</h1>
+      <a href="https://drive.google.com/drive/folders/1qsbVvjGFbThqQazKx1MK3wIB6Z7LveXh?usp=sharing" target="_blank"><button
+          type="submit" name="signupsubmit" style="max-width: 100%;
+      height: auto;
+      background-color: #0492C2;
+      color: white;
+      font-size: 1.5rem;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-weight: bold ;
+      text-align: center;
+      padding: 5px 5px;
+      border-radius: 8px;
+      cursor:pointer;
+      transition: 0.4s ease">Download</button></a>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <p class="first-text" id="first-text">After inserting Excel data into Tableau:</p>
+      <br>
+      <br>
+      <h2 style="margin-top: 20px; margin-bottom:20px; text-decoration:underline">Dataset</h2>
+      <br>
+      <br>
+      <img src="./img/Tableau1.png" alt="dataset" class="description-img" id="description-img">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2 style="text-decoration:underline">Request 1:</h2>
+      <p class="sc-text" id="sc-text">A bar chart with bars for different countries in different colors, and single view
+        filters for gender to show average “Last performance evaluation” for employees in
+        different departments and different countries.</p>
+      <img src="./img/request1.png" alt="req1" class="description-img" id="description-img">
+      <br>
+      <br>
+      <h2 style="margin-top: 20px; margin-bottom:20px;text-decoration:underline">Request 2:</h2>
+      <p class="sc-text" id="sc-text"> A clustered column chart with different colors for “Employee's perception of
+        competition in the organization’s culture” and “Employee's perception of collaboration in the organization’s
+        culture” to depict the average of “Employee's perception of
+        competition in the organization’s culture” and the average of “Employee's perception of collaboration in the
+        organization’s culture” for employees in different departments.
+      </p>
+      <br>
+      <br>
+      <img src="./img/request2T.png" alt="req2" class="description-img" id="description-img">
+      <br>
+      <br>
+      <br>
+      <h2 style="margin-top: 20px; margin-bottom:20px;text-decoration:underline">Request 3:</h2>
+      <p class="sc-text" id="sc-text"> A GIS with countries with different levels of average “percent remote” in
+        different colors to show the average “Percent remote” and average “Employee’s
+        satisfaction with working remote” for different countries as labels. </p>
+      <br>
+      <br>
+      <img src="./img/request3T.png" alt="req3" class="description-img" id="description-img">
+      <br>
+      <br>
+      <br>
+      <h2 style="text-decoration:underline">Request 4:</h2>
+      <p class="sc-text" id="sc-text">A treemap to separate the employees into their “Departments” and uses size to
+        represent each department’s sum of “Number of projects”.</p>
+      <img src="./img/req4.png" alt="req4" class="description-img" id="description-img">
+      <br>
+      <br>
+      <br>
+      <h2 style="text-decoration:underline">Request 5:</h2>
+      <p class="sc-text" id="sc-text">A dashboard of the charts made for request 1 and 4 above with a filter based on
+        Gender simultaneously.</p>
+      <img src="./img/request5T.png" alt="req5" class="description-img" id="description-img">
+      <br>
+      <br>
+      <hr>
+      <br>
+      <p class="first-text" id="first-text">Report on findings after analyzing Tableau charts and dashboards of XYZ: </p>
+      <p class="sc-text" id="sc-text">.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr>
+    <!-- Contact Section -->
+    <br>
+    <br>
+    <section id="contact">
+      <div class="contact container">
+        <div class="contact-header">
+          <h1 class="section-title" style="font-weight:bold 500">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+1 437 235 4045</h2>
+            </div>
+          </div>
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2><a href="mailto:espernguyen97@gmail.com"><u>Mail to Nhi Nguyen</u></a></h2>
+            </div>
+          </div>
+          <div class="contact-item" style="background-color: white">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Toronto, Ontario, Canada</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>N</span>hi <span>N</span>guyen</h1>
+        </div>
+        <br>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://github.com/espernguyen97" target="_blank"><img
+                src="https://img.icons8.com/plasticine/72/github.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="mailto:espernguyen97@gmail.com"><img src="https://img.icons8.com/clouds/344/gmail-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.linkedin.com/in/nhi-nguyen-5b808b235/" target="_blank"><img
+                src="https://img.icons8.com/color/72/linkedin.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
