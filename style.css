@@ -476,103 +476,29 @@ p {
 
 /*About Section*/
 
-.about-content {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: center;
-	    grid-gap: 3rem;
-		font-weight: bold 500;
-		max-width: 100%;
+#about .about {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
 }
 
-.about-content .intro-text{
-	margin-top: 20px;
+ .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+.col-right p {
+	margin-bottom: 20px;
+}
+.col-right .cta {
 	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
 	font-size: 2rem;
-	margin-bottom: 3px;
-	text-align: center;
-	max-width: 100%;
-	width:fit-content ;
-
 }
 
-.right-about {
-	display: grid;
-	grid-template-columns: repeat(2, 4fr);
-	border-radius: 10px;
-	grid-gap: 2rem;
-	max-width: 100%;
-	width:fit-content ;
-
-  }
-
- .about-item {
-	padding: 20px;
-	border: 5px solid var(--color-grey-5);
-	border-radius: 5px;
-	transition: all 0.3s ease-in-out;
-	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color:white;
-	max-width: 100%;
-
-  }
-
-
- .right-about .about-item:hover {
-	cursor: default;
-	transform: translateY(-5px);
-	border: 2px solid  #0492C2;
-	box-shadow: 1px 4px 15px #0492C2;
-  }
-
- .right-about .about-item .abt-text {
-	padding: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	color:white;
-  }
-
-  .right-about .about-item .abt-text .large-text {
-	font-size: 3rem;
-	font-weight: 700;
-	color:   #0492C2;
-  }
-
- .right-about .about-item .abt-text .small-text {
-	padding-left: 3rem;
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	color: var(--color-grey-1);
-	letter-spacing: 2px;
-  }
-
-   .right-about .about-item .abt-text .small-text::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 15px;
-	width: 2rem;
-	height: 2px;
-	background-color: var(--color-grey-5);
-  }
-
-  .left-about {
-	max-width:fit-content ;
-	justify-content: center;
-	text-align: center;
-  }
- 
-  .left-about p {
-	color: black;
-	font-size: 1.4rem;
-	margin-top: 10px;
-	line-height: 2.5rem;
-	font-weight: 300;
-	letter-spacing: 0.05rem;
-	max-width: 100%;
-	color: var(--color-grey-1);
-  }
 
 
 /* End About Section */
