@@ -23,7 +23,7 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="index.html" data-after="Home">Back to Portfolio</a></li>
+            <li><a href="index.html#projects" data-after="Home">Back to Portfolio</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
@@ -53,34 +53,43 @@
         <h1 class="section-title">Project <span>Details</span></h1>
       </div>
 
-      <p class="first-text" id="first-text">()</p>
-
-      <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">Challenge:</h2>
+      <p class="first-text" id="first-text">(Employees Data Analysis)</p>
+      <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">About dataset:</h2>
+      <p class="sc-text" id="sc-text">This project was provided by <a href="https://365careers.com/" target="_blank">365
+          Careers </a>. The dataset contains the data of all employees, which is saved in a database called employees_mod. All the data are openly available and
+        they can be downloaded on
+        the
+        website or through the link below.</p>
+      <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">Goal:</h2>
+      <p class="sc-text" id="sc-text">Extracting some specific information and visualizing data using SQL, Tableau in order to
+        measure,
+        monitor the employees and managers working in the
+        company and their average salary each year, starting from 1900 based off the historical data provided of a company</p>
+      <h2 style="margin-top: 30px; margin-bottom:20px;text-decoration:underline">What Are The Tasks Given?</h2>
       <p class="sc-text" id="sc-text">
-        Solve Business Tasks in SQL and then use Tableau Desktop to create the charts and the dashboard asked in the
-        following questions:
-        <br>
-        Task 1: Create a visualization that provides a breakdown between the male and female employees working in the
+        Through the data given, I'm looking for:
+
+        Task 1: A breakdown between the male and female employees working in the
         company each year, starting from 1900.
         <br>
-        Task 2: Compare the number of male managers to the number of female managers from different departments for each
+        Task 2: The number of male managers to the number of female managers from different departments for each
         year,
         starting from 1990.
         <br>
-        Task 3: Compare the average salary of female versus male employees in the entire company until year 2002, and
-        add a filter allowing you to see that per each department.
+        Task 3: The average salary of female versus male employees in the entire company until year 2002, and
+        it is categorized by department.
         <br>
-        Task 4: Create an SQL stored procedure that will allow you to obtain the average male and female salary per
+        Task 4: An SQL stored procedure that will allow to obtain the average male and female salary per
         department within a certain salary range. Let this range be defined by two values the user can insert when
         calling the procedure.
-        Finally, visualize the obtained result-set in Tableau as a double bar chart.
         <br>
-        Task 5: Create a dashboard of the charts made for all tasks above.
+        Task 5: A dashboard of the charts made for all tasks above.
       </p>
       <br>
       <br>
       <h1 style="margin-top: 30px;text-decoration:underline">Reference Resources:</h1>
-      <a href="https://drive.google.com/drive/u/3/folders/1YQqyc4xcljjq4SwrS7SY1FkToCWRLBwQ" target="_blank"><button type="submit" name="signupsubmit" style="max-width: 100%;
+      <a href="https://drive.google.com/drive/u/3/folders/1YQqyc4xcljjq4SwrS7SY1FkToCWRLBwQ" target="_blank"><button
+          type="submit" name="signupsubmit" style="max-width: 100%;
       height: auto;
       background-color: #0492C2;
       color: white;
@@ -97,8 +106,10 @@
       <br>
       <br>
       <hr>
+      <p class="first-text" id="first-text">Let's Solve This Project!</p>
+      <h2 style="text-decoration:underline">After inserting employees data into MySQ:</h2>
       <br>
-      <p class="first-text" id="first-text">After inserting employees data into MySQL:</p>
+      <br>
       <br>
       <img src="./img/datasetTableau.png" alt="dataset" class="description-img" id="description-img">
       <br>
@@ -106,10 +117,10 @@
       <br>
       <br>
       <h2 style="text-decoration:underline">Task 1:</h2>
-      <p class="sc-text" id="sc-text">A bar chart provides a breakdown between the male and female employees working in
+      <p class="sc-text" id="sc-text">A breakdown between the male and female employees working in
         the company each year, starting from 1900:</p>
       <br>
-      <p class="sc-text" id="sc-text">Firstly, Retrieve the data of the male and female employees working in
+      <p class="sc-text" id="sc-text">Firstly, Retrieving the data of the male and female employees working in
         the company each year (starting from 1900) in MySQL.</p>
       <img src="./img/SQL Task 1.png" alt="req1" class="description-img" id="description-img">
       <br>
@@ -118,23 +129,16 @@
       <img src="./img/SQL task 1. tableau.png" alt="req1" class="description-img" id="description-img">
       <br>
       <br>
-      <p class="sc-text" id="sc-text">Finally, Visualize the obtained result-set in Tableau as a bar chart </p>
+      <p class="sc-text" id="sc-text">Finally, Visualizing the obtained result-set in Tableau as a bar chart </p>
       <img src="./img/SQL task 1. tableau 2.png" alt="req1" class="description-img" id="description-img">
       <br>
       <br>
-      <p class="sc-text" id="sc-text">In 1990, there were less than 20000 workers in the company while in 2002, there
-        were more than 140000.However, the increase in number of employed work throughout the years has been constant,
-        and the ratio between
-        male and female employees in the company has always been 60% to 40% approximately.
-      </p>
-      <br>
-      <br>
       <h2 style="text-decoration:underline">Task 2:</h2>
-      <p class="sc-text" id="sc-text">An area chart to show the number of male managers to the number of female
+      <p class="sc-text" id="sc-text">The number of male managers to the number of female
         managers from
         different departments for each year, starting from 1990:</p>
       <br>
-      <p class="sc-text" id="sc-text">Firstly, Retrieve the data containing the number of male managers to the number of
+      <p class="sc-text" id="sc-text">Firstly, Extracting the number of male managers to the number of
         female managers from
         different departments for each year (starting from 1990) in MySQL.</p>
       <img src="./img/SQL task 2.png" alt="req2" class="description-img" id="description-img">
@@ -144,16 +148,16 @@
       <img src="./img/SQL Task 2 tableau 1 dataset.png" alt="req2" class="description-img" id="description-img">
       <br>
       <br>
-      <p class="sc-text" id="sc-text">Finally, Visualize the obtained result-set in Tableau as an area chart </p>
+      <p class="sc-text" id="sc-text">Finally, Visualizing the obtained result-set in Tableau as an area chart </p>
       <img src="./img/SQL task 2 tableau chart.png" alt="req2" class="description-img" id="description-img">
       <br>
       <br>
       <h2 style="text-decoration:underline">Task 3:</h2>
-      <p class="sc-text" id="sc-text">An line chart with a filter based on department to show the average salary of
+      <p class="sc-text" id="sc-text">The average salary of
         female versus male employees in the
-        entire company until year 2002:</p>
+        entire company until year 2002, categorized by department</p>
       <br>
-      <p class="sc-text" id="sc-text">Firstly, Retrieve the data containing the average salary of female versus male
+      <p class="sc-text" id="sc-text">Firstly, Retrieving the data containing the average salary of female versus male
         employees in the
         entire company until year 2002 in MySQL.</p>
       <img src="./img/SQL task 3.png" alt="req3" class="description-img" id="description-img">
@@ -163,21 +167,17 @@
       <img src="./img/SQL task 3 Tableau dataset.png" alt="req3" class="description-img" id="description-img">
       <br>
       <br>
-      <p class="sc-text" id="sc-text">Finally, Visualize the obtained result-set in Tableau as a line chart </p>
+      <p class="sc-text" id="sc-text">Finally, Visualizing the obtained result-set in Tableau as a line chart </p>
       <img src="./img/SQL task 3 tableau line chart.png" alt="req3" class="description-img" id="description-img">
       <br>
-      <br>
-      <p class="sc-text" id="sc-text">At the given time period, the salaries values have been augmenting constantly for
-        any department. The average salaries of male and female employees were similar until 1993, and after that male
-        employees were paid more with a few thousands of dollars difference per year.
-      </p>
-      <br>
+
       <br>
       <h2 style="text-decoration:underline">Task 4:</h2>
-      <p class="sc-text" id="sc-text">Create an SQL stored procedure that will allow to obtain the average male and female salary per department within a certain salary range. Let this range be defined by two values the user can insert when calling the procedure.
-        Finally, visualize the obtained result-set in Tableau as a double bar chart:</p>
+      <p class="sc-text" id="sc-text">An SQL stored procedure that will allow to obtain the average male and
+        female salary per department within a certain salary range.</p>
       <br>
-      <p class="sc-text" id="sc-text">Firstly, Retrieve the data obtaining the average male and female salary per department within a certain salary range in MySQL.</p>
+      <p class="sc-text" id="sc-text">Firstly, Retrieving the data obtaining the average male and female salary per
+        department within a certain salary range in MySQL.</p>
       <img src="./img/SQL Task 4.png" alt="req4" class="description-img" id="description-img">
       <br>
       <br>
@@ -185,7 +185,7 @@
       <img src="./img/SQL task 4 tableau dataset.png" alt="req4" class="description-img" id="description-img">
       <br>
       <br>
-      <p class="sc-text" id="sc-text">Finally, Visualize the obtained result-set in Tableau as a double bar chart </p>
+      <p class="sc-text" id="sc-text">Finally, visualizing the obtained result-set in Tableau as a double bar chart </p>
       <img src="./img/SQL task 4 tableau pic.png" alt="req4" class="description-img" id="description-img">
       <br>
       <h2 style="text-decoration:underline">Task 5:</h2>
@@ -195,7 +195,17 @@
       <img src="./img/Task 5 tableau.png" alt="req4" class="description-img" id="description-img">
       <br>
       <br>
-
+      <br>
+      <hr>
+      <p class="first-text" id="first-text">Conclusion:</p>
+      <p class="sc-text" id="sc-text">In 1990, there were less than 20000 workers in the company while in 2002, there
+        were more than 140000.However, the increase in number of employed work throughout the years has been constant,
+        and the ratio between
+        male and female employees in the company has always been 60% to 40% approximately<br>
+        At the given time period, the salaries values have been augmenting constantly for
+        any department. The average salaries of male and female employees were similar until 1993, and after that male
+        employees were paid more with a few thousands of dollars difference per year.
+      </p>
 
     </div>
   </section>
