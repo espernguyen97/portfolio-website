@@ -218,6 +218,8 @@ p {
 }
 /* End Header section */
 
+
+
 /* Hero Section */
 #hero {
 	background-image: url(https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
@@ -583,6 +585,17 @@ p {
 	border: 2px solid black;
 }
 
+#anh {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+	height: auto; 
+	object-fit: cover;
+}
+
 .timeline p {
 	color: black;
 	font-weight: bold;
@@ -599,7 +612,9 @@ p {
 display: block;
   margin-left: auto;
   margin-right: auto;
-	max-width: 100%; 
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 	height: auto; 
 	object-fit: cover;
 }
