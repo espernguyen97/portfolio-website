@@ -7,16 +7,123 @@
   <link rel="stylesheet" href="style.css">
   <title>Esper Website</title>
 </head>
-  
-  <!-- Google tag (gtag.js) -->
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GSW8FFLL5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-3GSW8FFLL5');
 </script>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+
+    .photo-container {
+      max-width: 1225px;
+      width: 90%;
+      margin: auto;
+      padding: 40px 0;
+      box-shadow: o 5px 15px rgba(0, 0, 0, 1);
+      overflow: hidden;
+      cursor: pointer;
+
+    }
+
+    .eventDesc {
+      position: relative;
+      bottom: 45px;
+      left: 15px;
+      color: coral;
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.9px;
+    }
+
+    .photo-gallery {
+      display: flex;
+      gap: 20px
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+      transition: .2s linear;
+      pointer-events: all;
+    }
+
+    .photo:hover img {
+      transform: scale(1.05);
+      filter: brightness(40%);
+      transition: filter 0.5s ease;
+
+    }
+
+
+    @media(max-width:768px) {
+      .photo-gallery {
+        flex-direction: column;
+      }
+    }
+
+    .gallery .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      list-style: none;
+    }
+
+    .gallery .controls .buttons {
+      display: inline-block;
+      padding: 0.5em 1.0em;
+      border-radius: 4px;
+      background: #ffffff;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      box-shadow: 1px 2px rgba(240, 248, 255, 0.021);
+      cursor: pointer;
+      border: 1px solid;
+      margin: 8px;
+      -webkit-transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      transition: background 0.3s;
+    }
+
+    .gallery .controls .buttons.active {
+      background: #0492C2;
+      color: #fff;
+    }
+
+    .gallery .controls .buttons:hover {
+      background-color: #0492C2;
+    }
+
+
+
+
+
+
+
+
+  }
+</style>
 
 <body>
   <!-- Header -->
@@ -37,7 +144,7 @@
             <li><a href="#about" data-after="Services">About</a></li>
 
             <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="contact.html" data-after="Contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -51,7 +158,7 @@
     <div class="hero container">
       <div>
         <h1>Hi, <span></span></h1>
-        <h1>My Name is <span></span></h1>
+        <h1>This Is <span></span></h1>
         <h1>Nhi (or Esper) <span></span></h1>
         <a href="#projects" type="button" class="cta">View My Projects</a>
       </div>
@@ -64,7 +171,7 @@
     <div class="about container">
       <div style="width: 35%; float:left">
         <img src="./img/avatar.png" class="box">
-      </div> 
+      </div>
 
       <style>
         .box {
@@ -119,62 +226,66 @@
         </div>
         <br>
         <br>
-        
+
         <p><strong>Hi, my name is Nhi Nguyen or you can call me Esper
-          <br>
-          <br>
-          I am a Marketing Enthusiast, Strategist and Content Writer with strong proven teamwork ability, exceptional drive and
-          determination.
-          I can work extremely well under pressure to meet deadline as demonstrated throughout academic and professional
-          life. I always strive for perfection in order to achieve and exceed expectations. 
-          <br>
-          <br>I am on the way to find opportunities to collaborate on different projects and
-          work in a high performing, professional team. I am ready to be challenged
-          as an individual and keen to apply my knowledge and skills. </strong>
+            <br>
+            <br>
+            I am a Marketing Enthusiast, Strategist and Content Writer with strong proven teamwork ability, exceptional
+            drive and
+            determination.
+            I can work extremely well under pressure to meet deadline as demonstrated throughout academic and
+            professional
+            life. I always strive for perfection in order to achieve and exceed expectations.
+            <br>
+            <br>I am on the way to find opportunities to collaborate on different projects and
+            work in a high performing, professional team. I am ready to be challenged
+            as an individual and keen to apply my knowledge and skills. </strong>
         </p>
       </div>
     </div>
-    </div>
   </section>
 
-  </div>
-  </div>
-  <div id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title"><strong>My Spec<span>i</span>al<span>i</span>zat<span>i</span>on</strong></h1>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Development</h2>
-          <p>Design Wireframe, Build Websites, Manage Database and Maintain Websites That Run Online On A Browser.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Analytics </h2>
-          <p>Mine Data, Transform Data Into Insights To Improve Business Decisions, And Communicate Findings In Reports.
-          </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Data Visualization</h2>
-          <p>Generate Charts And Business Dashboards, Analyze And Provide Useful Insights Into Areas That Can Be
-            Optimized.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2> Writing</h2>
-          <p> Create Value, Convey Messages and Creative Ideas, Express Subject Matters As Well As Experiences In Written
-            Language. </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-  </section>
 
+
+  <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- magnific popup js cdn link  -->
+
+  <script>
+
+    $(document).ready(function () {
+
+      $('.buttons').click(function () {
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if (filter == 'all') {
+          $('.image').show(400);
+        } else {
+          $('.image').not('.' + filter).hide(200);
+          $('.image').filter('.' + filter).show(400);
+        }
+
+      });
+
+      $('.gallery').magnificPopup({
+
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+
+      });
+
+    });
+
+  </script>
   <!-- End About Section  -->
 
 
@@ -182,290 +293,225 @@
   <section id="projects" style="background-color: rgb(31, 30, 30)">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title" style="color:whitesmoke"><strong>Recent <span>Projects</span></strong></h1>
+        <h1 class="section-title" style="color:whitesmoke"><strong>All <span>Projects</spa></strong></h1>
       </div>
 
+      <div class="gallery">
 
-      <section>
-        <ul>
-          <li class="list active" data-filter="all" style="background-color:#0492C2; color:whitesmoke">All</li>
-          <li class="list" data-filter="samples">Writing Samples</li>
-          <li class="list" data-filter="academic">Academic Writing</li>
-          <li class="list" data-filter="web">HTML & CSS & JS</li>
-          <li class="list" data-filter="design">Digital Design & Illustration</li>
-          <li class="list" data-filter="python">Python</li>
-          <li class="list" data-filter="sql">SQL</li>
-          <li class="list" data-filter="tableau">Tableau</li>
-          <li class="list" data-filter="spss">SPSS</li>
+        <ul class="controls">
+          <li class="buttons active" data-filter="all" style="background-color:#0492C2; color:black;font-weight:bold">
+            All</li>
+          <li class="buttons" data-filter="writing">Writing Samples</li>
+          <li class="buttons" data-filter="academic">Academic Writing</li>
+          <li class="buttons" data-filter="web">HTML & CSS & JS</li>
+          <li class="buttons" data-filter="design">Digital Design & Illustration</li>
+          <li class="buttons" data-filter="python">Python</li>
+          <li class="buttons" data-filter="sql">SQL</li>
+          <li class="buttons" data-filter="tableau">Tableau</li>
+          <li class="buttons" data-filter="spss">SPSS</li>
         </ul>
-      </section>
-
-      <div class="all-projects">
-
-        <div class="projectItem" data-item="samples">
-          <h4>Blog Post Sample</h4>
-          <h3> <a href="sample4.html"
-              target="_blank">Best 5 Hot Pot In Vietnam</a></h3>
-          <a href="sample4.html" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="sample4.html" target="_blank"><img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTg1OTQwY2Y4MmVkOGY2ZGFmNjhlZDYwOWZjNTZmYzRjYjI3ZjdhOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wHVmC3CPzl6SBzdZhD/giphy.gif" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="web">
-          <h4>NodeJS, React, MongoDB</h4>
-          <h3> <a href="AS.html"
-              target="_blank">AppServ </a></h3>
-          <a href="AS.html"
-            target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="https://www.youtube.com/watch?v=ww8gtzanfTs"
-            target="_blank"><img
-              src="https://media0.giphy.com/media/c233iBtGyTEnM0rN6i/giphy.gif" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="academic">
-          <h4>Academic Writing</h4>
-          <h3> <a href="sample1.html"
-              target="_blank">Marketing Plan: UNOBRUSH</a></h3>
-          <a href="sample1.html" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="sample1.html" target="_blank"><img
-              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmZrdTJleXBlNTdieTN1NmZnbnl2eXkyMjEydGU4dnV0cWxrMTJoaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HVqKwShVoWMwMhH63i/giphy.gif" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="sql">
-          <h4>NodeJS, React, SQL </h4>
-          <h3> <a href="https://github.com/espernguyen97/FS1030-Electronical-Medical-Record-Management-System"
-              target="_blank">Medical Record Management</a></h3>
-          <a href="EMR.html"
-            target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="https://www.youtube.com/watch?v=dm1P4WCM9so"
-            target="_blank"><img
-              src="https://media3.giphy.com/media/ZdazkYD70Q59KA7qnX/giphy.gif?cid=790b761112edc50ac356e294738f3c6e226fb0af3d74e05f&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        
-
-        <div class="projectItem" data-item="academic">
-          <h4>Academic Writing</h4>
-          <h3> <a href="sample2.html"
-              target="_blank">Marketing Research: McDonald's in China</a></h3>
-          <a href="sample2.html" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="sample2.html" target="_blank"><img
-              src="https://media4.giphy.com/media/dNckfVdKOLAkfcqRD3/giphy.gif?cid=790b7611bbc40607f8326cc75952cd912ffc41b6a09789c6&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="design">
-          <h4>Digital Design & Illustration</h4>
-          <h3> <a href="sample5.html"
-              target="_blank">Sample</a></h3>
-          <a href="sample5.html" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="sample5.html" target="_blank"><img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDMwNWYyYTE0M2E5ZGE3NzlhMTA2NGExNTI3OTdkZTk2ZmIyZmRiMyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fZlQMLUDd0vx794RDg/giphy.gif" class="anhProj" id="anhProj"></a>
-        </div>
 
 
-        <div class="projectItem" data-item="python">
-          <h4>Python</h4>
-          <h3> <a href="https://github.com/espernguyen97/Python-Fandango-Movie-Ratings-Analysis.git"
-              target="_blank">Fandango's Movie Ratings Analysis</a></h3>
-          <a href="https://github.com/espernguyen97/Python-Fandango-Movie-Ratings-Analysis.git" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href="https://github.com/espernguyen97/Python-Fandango-Movie-Ratings-Analysis.git" target="_blank"><img
-              src="https://media3.giphy.com/media/IKOY05CXHDx7oFrJkX/giphy.gif?cid=790b7611ad37deb7aa295ee9e8ffbb7d6597a9be47f3a394&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
 
-        <div class="projectItem" data-item="web">
-          <h4>HTML, CSS, JS</h4>
-          <h3> <a href=" https://espernguyen.com/"
-              target="_blank">Portfolio Website </a></h3>
-          <a href="https://github.com/espernguyen97/portfolio-website.git"
-            target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href=" https://espernguyen.com/"
-            target="'_blank"><img
-              src="https://media4.giphy.com/media/RmIvsRXDXULGwQscN6/giphy.gif?cid=790b7611454d63a1ff10c28458b5a1a1fa437cea4b45a503&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-      
-
-        <div class="projectItem" data-item="python">
-          <h4>Python</h4>
-          <h3> <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank">World Trends
-              Analysis</a></h3>
-          <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank"><button
-              type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank"><img
-              src="https://media1.giphy.com/media/RwhMjsthOYIIUElFvU/giphy.gif?cid=790b7611633eb245a6ea3af5e28c8496465d8bc9d0dee77d&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="tableau">
-          <h4>Tableau</h4>
-          <h3> <a href="layoutTen.html" target="_blank">SFO's Airline Data Analysis </a></h3>
-          <a href="layoutTen.html"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="layoutTen.html"><img
-              src="https://media4.giphy.com/media/zwyadZZrGEA0NyJgyK/giphy.gif?cid=790b76118bb10f4c2210ef061ef00c2222a6ebfcb2c18b33&rid=giphy.gif&ct=g"class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="web">
-          <h4>HTML, CSS, JS</h4>
-          <h3> <a href="https://github.com/espernguyen97/Javascript-G4-Photo-Gallery.git"
-              target="_blank">Photo Gallery</a></h3>
-          <a href="https://github.com/espernguyen97/Javascript-G4-Photo-Gallery.git"
-            target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href="https://github.com/espernguyen97/Javascript-G4-Photo-Gallery.git"
-            target="_blank"><img
-              src="https://media0.giphy.com/media/c233iBtGyTEnM0rN6i/giphy.gif" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="sql">
-          <h4>SQL, Tableau</h4>
-          <h3> <a href="https://drive.google.com/drive/u/3/folders/1YQqyc4xcljjq4SwrS7SY1FkToCWRLBwQ"
-              target="_blank">Employees Data Analysis</a></h3>
-          <a href="layoutFive.html"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="layoutFive.html"><img
-              src="https://media2.giphy.com/media/JqH0I2JB2EZBxj3wYb/giphy.gif?cid=790b76115038028eccdf5f416c8e2199dc68e43c54d6b0de&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="web">
-          <h4>HTML, Bootstrap, JS</h4>
-          <h3> <a href="https://espernguyen97.github.io/Javacript-bootstrap-responsive-movie-booking-website/"
-              target="_blank">Ticket Booking Website </a></h3>
-          <a href="https://espernguyen97.github.io/Javacript-bootstrap-responsive-movie-booking-website/"
-            target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href="https://espernguyen97.github.io/Javacript-bootstrap-responsive-movie-booking-website/"
-            target="'_blank"><img
-              src="https://media2.giphy.com/media/ifAktIMJ8SxMU9gDOH/giphy.gif?cid=790b76113944fd8a7eb354818835c551c8f63b6a37ce53f1&rid=giphy.gif&ct=g"class="anhProj" id="anhProj"></a>
-        </div>
-
-
-        <div class="projectItem" data-item="python">
-          <h4>Python</h4>
-          <h3> <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank">US Movies Gross
-              Profit</a></h3>
-          <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank"><button type="submit"
-              name="signupsubmit" class="btn-signup">View Code</button></a>
-          <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank"><img
-              src="https://media4.giphy.com/media/Ph5JDeTR6chi94l8Ue/giphy.gif?cid=790b7611608b83b924c99b1a376d93a04d2305d153ee698d&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="tableau">
-          <h4>Tableau</h4>
-          <h3> <a href="layoutEleven.html" target="_blank">Sales Analysis</a></h3>
-          <a href="layoutEleven.html"><button type="submit" name="signupsubmit" class="btn-signup">View
-              More</button></a>
-          <a href="layoutEleven.html"><img
-              src="https://media2.giphy.com/media/0iRlbapB9i6lOCffNc/giphy.gif?cid=790b761125a9a0a006e35b98666b35cca2cdf89a39435433&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-        <div class="projectItem" data-item="web">
-
-          <h4>HTML, SCSS </h4>
-          <h3> <a href="https://espernguyen97.github.io/Javascript-SASS-responsive-website-Massive/" target="_blank">
-              Design Company Website</a></h3>
-          <div>
-            <a href="https://github.com/espernguyen97/Javascript-SASS-responsive-website-Massive"
-              target="_blank"><button type="submit" name="signupsubmit" class="btn-signup">View Code</button></a>
-          </div>
-          <a href="https://espernguyen97.github.io/Javascript-SASS-responsive-website-Massive/" target="_blank"><img
-              src="https://media4.giphy.com/media/y301V1QbwVCMdyemSr/giphy.gif?cid=790b76115d94127ee2e0ea79e04b962e976dd992c926b7a9&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-
-        <div class="projectItem" data-item="tableau">
-          <h4>Tableau</h4>
-          <h3> <a href="https://drive.google.com/drive/folders/1qsbVvjGFbThqQazKx1MK3wIB6Z7LveXh?usp=sharing"
-              target="_blank">Employee Performance Analysis</a></h3>
-          <a href="layoutSix.html"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="layoutSix.html"><img
-              src="https://media0.giphy.com/media/mnMFgzposBl38mVKtg/giphy.gif?cid=790b7611490f0bdfb73f1f3950c277f0e319809afcda5ead&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
-
-
-        <div class="projectItem" data-item="spss">
-          <h4>SPSS</h4>
-          <h3> <a href="https://drive.google.com/drive/u/2/folders/1V4FR0YmseoAtY6E4pOz3tQguq1i73MCX"
-              target="_blank">Winnings ($) Prediction</a></h3>
-          <a href="layoutEight.html"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="layoutEight.html"><img
-              src="https://media2.giphy.com/media/FyXBXl2vekMANcthJ3/giphy.gif?cid=790b7611e67cc168eb276a13200d22883b240676d4cf229d&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-
-        </div>
-
-        <div class="projectItem" data-item="tableau">
-          <h4>Tableau</h4>
-          <h3> <a href="layoutTwelve.html"
-              target="_blank">Spotify Music Classification and Personalization</a></h3>
-          <a href="layoutTwelve.html"><button type="submit" name="signupsubmit" class="btn-signup">View More</button></a>
-          <a href="layoutTwelve.html"><img
-              src="https://media3.giphy.com/media/r1TxQeqEk2M3E8OjGT/giphy.gif?cid=790b761139364db818d35fac0ffcdc80d8ee8ef3d9205800&rid=giphy.gif&ct=g" class="anhProj" id="anhProj"></a>
-        </div>
       </div>
 
-      <script>
-        let list = document.querySelectorAll('.list');
-        let projectItem = document.querySelectorAll('.projectItem');
+      <div class="photo-container">
+        <div class="photo-gallery">
+          <div class="column">
 
-        for (let i = 0; i < list.length; i++) {
-          list[i].addEventListener('click', function () {
-            for (let j = 0; j < list.lenght; j++) {
-              list[j].classList.remove('active')
-            }
-            this.classList.add('active')
+            <div class="photo">
+              <a href="sample2.html" class="image academic">
+                <img
+                  src="https://media4.giphy.com/media/dNckfVdKOLAkfcqRD3/giphy.gif?cid=790b7611bbc40607f8326cc75952cd912ffc41b6a09789c6&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Marketing Research: McDonald's in China </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="https://espernguyen97.github.io/Javascript-SASS-responsive-website-Massive/" target="_blank" class="image web">
+                <img
+                  src="https://media4.giphy.com/media/y301V1QbwVCMdyemSr/giphy.gif?cid=790b76115d94127ee2e0ea79e04b962e976dd992c926b7a9&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Design Company Website</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="designSample.html" class="image design">
+                <img
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTg1OTQwY2Y4MmVkOGY2ZGFmNjhlZDYwOWZjNTZmYzRjYjI3ZjdhOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wHVmC3CPzl6SBzdZhD/giphy.gif"
+                  alt="">
+                <div class="eventDesc">Best Facebook Post Design</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="layoutSix.html" class="image tableau">
+                <img
+                  src="https://media0.giphy.com/media/mnMFgzposBl38mVKtg/giphy.gif?cid=790b7611490f0bdfb73f1f3950c277f0e319809afcda5ead&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Employee Performance Analysis </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="sample4.html" class="image writing">
+                <img
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTg1OTQwY2Y4MmVkOGY2ZGFmNjhlZDYwOWZjNTZmYzRjYjI3ZjdhOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wHVmC3CPzl6SBzdZhD/giphy.gif"
+                  alt="">
+                <div class="eventDesc">Writing Samples</div>
+              </a>
+            </div>
 
-            let dataFilter = this.getAttribute('data-filter');
+            <div class="photo">
+              <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank" class="image python">
+                <img
+                  src="https://media1.giphy.com/media/RwhMjsthOYIIUElFvU/giphy.gif?cid=790b7611633eb245a6ea3af5e28c8496465d8bc9d0dee77d&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">World Trends Analysis
+                </div>
+              </a>
+            </div>
 
-            for (let k = 0; k < projectItem.length; k++) {
-              projectItem[k].classList.remove('active');
-              projectItem[k].classList.add('hide');
 
-              if (projectItem[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
-                projectItem[k].classList.remove('hide');
-                projectItem[k].classList.add('active');
-              }
-            }
+            <div class="photo">
+              <a href="https://espernguyen97.github.io/Javascript-G4-Photo-Gallery/" target="_blank" class="image web">
+                <img src="https://media0.giphy.com/media/c233iBtGyTEnM0rN6i/giphy.gif" alt="">
+                <div class="eventDesc">Photo Gallery </div>
+              </a>
+            </div>
 
-          })
-        }
-      </script>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <a href="layoutEleven.html"" class=" image tableau">
+                <img
+                  src="https://media2.giphy.com/media/0iRlbapB9i6lOCffNc/giphy.gif?cid=790b761125a9a0a006e35b98666b35cca2cdf89a39435433&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Sales Analysis </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="sample1.html" class="image academic">
+                <img
+                  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmZrdTJleXBlNTdieTN1NmZnbnl2eXkyMjEydGU4dnV0cWxrMTJoaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HVqKwShVoWMwMhH63i/giphy.gif"
+                  alt="">
+                <div class="eventDesc">Marketing Plan: UNOBRUSH</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="layoutTen.html" class="image tableau">
+                <img
+                  src="https://media4.giphy.com/media/zwyadZZrGEA0NyJgyK/giphy.gif?cid=790b76118bb10f4c2210ef061ef00c2222a6ebfcb2c18b33&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">SFO's Airline Data Analysis </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank" class=" image python">
+                <img
+                  src="https://media4.giphy.com/media/Ph5JDeTR6chi94l8Ue/giphy.gif?cid=790b7611608b83b924c99b1a376d93a04d2305d153ee698d&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">US Movies
+                  Gross
+                  Profit
+                </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="sample5.html" class="image design">
+                <img
+                  src="https://media3.giphy.com/media/IKOY05CXHDx7oFrJkX/giphy.gif?cid=790b7611ad37deb7aa295ee9e8ffbb7d6597a9be47f3a394&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Sample</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="https://github.com/espernguyen97/portfolio-website.git" class="image web" target="_blank">
+                <img
+                  src="https://media4.giphy.com/media/RmIvsRXDXULGwQscN6/giphy.gif?cid=790b7611454d63a1ff10c28458b5a1a1fa437cea4b45a503&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Portfolio Website </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="sample3.html" class="image writing">
+                <img
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTg1OTQwY2Y4MmVkOGY2ZGFmNjhlZDYwOWZjNTZmYzRjYjI3ZjdhOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wHVmC3CPzl6SBzdZhD/giphy.gif"
+                  alt="">
+                <div class="eventDesc">Top 5 Hot Pot In Vietnam</div>
+              </a>
+            </div>
 
+          </div>
+          <div class="column">
+            <div class="photo">
+              <a href="AS.html" class="image web">
+                <img src="https://media0.giphy.com/media/c233iBtGyTEnM0rN6i/giphy.gif" alt="">
+                <div class="eventDesc">AppServ </div>
+            </div>
+            <div class="photo">
+              <a href="EMR.html" class="image sql">
+                <img
+                  src="https://media3.giphy.com/media/ZdazkYD70Q59KA7qnX/giphy.gif?cid=790b761112edc50ac356e294738f3c6e226fb0af3d74e05f&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Medical Record Management</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="layoutFive.html" class="image sql">
+                <img
+                  src="https://media2.giphy.com/media/JqH0I2JB2EZBxj3wYb/giphy.gif?cid=790b76115038028eccdf5f416c8e2199dc68e43c54d6b0de&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Employees Data Analysis </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="https://espernguyen97.github.io/Javacript-bootstrap-responsive-movie-booking-website/" class="
+                image web" target="_blank">
+                <img
+                  src="https://media2.giphy.com/media/ifAktIMJ8SxMU9gDOH/giphy.gif?cid=790b76113944fd8a7eb354818835c551c8f63b6a37ce53f1&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Ticket Booking Website </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="https://github.com/espernguyen97/Python-Fandango-Movie-Ratings-Analysis.git" target="_blank"
+                class="image python">
+                <img
+                  src="https://media3.giphy.com/media/IKOY05CXHDx7oFrJkX/giphy.gif?cid=790b7611ad37deb7aa295ee9e8ffbb7d6597a9be47f3a394&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Fandango's Movie Ratings Analysis</div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="layoutTwelve.html" class="image tableau">
+                <img
+                  src="https://media3.giphy.com/media/r1TxQeqEk2M3E8OjGT/giphy.gif?cid=790b761139364db818d35fac0ffcdc80d8ee8ef3d9205800&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Spotify Music Classification and Personalization </div>
+              </a>
+            </div>
+            <div class="photo">
+              <a href="layoutEight.html" class="image spss">
+                <img
+                  src="https://media2.giphy.com/media/FyXBXl2vekMANcthJ3/giphy.gif?cid=790b7611e67cc168eb276a13200d22883b240676d4cf229d&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Winnings ($) Prediction</div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
+
+
+
+
   </section>
   <!-- End Projects Section -->
 
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div class="contact-header">
-        <h1 class="section-title" style="font-weight:bold 500"><strong>Contact <span>info</span></strong></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item" style="background-color: white">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 437 235 4045</h2>
-          </div>
-        </div>
-        <div class="contact-item" style="background-color: white">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2><a href="mailto:espernguyen97@gmail.com"><u>Mail to Esper Nguyen</u></a></h2>
-          </div>
-        </div>
-        <div class="contact-item" style="background-color: white">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Toronto, Ontario, Canada</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
 
   <!-- Footer -->
   <section id="footer">
@@ -487,43 +533,12 @@
               src="https://img.icons8.com/color/72/linkedin.png" /></a>
         </div>
       </div>
+      <p>Copyright © 2022. All Rights Reserved</p>
     </div>
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
-  <script>
 
-    (function () {
-      "use strict";
-
-      var items = document.querySelectorAll(".timeline li");
-
-      function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-
-      function callbackFunc() {
-        for (var i = 0; i < items.length; i++) {
-          if (isElementInViewport(items[i])) {
-            items[i].classList.add("in-view");
-          }
-        }
-      }
-
-      // listen for events
-      window.addEventListener("load", callbackFunc);
-      window.addEventListener("resize", callbackFunc);
-      window.addEventListener("scroll", callbackFunc);
-    })();
-
-  </script>
 
 </body>
 
