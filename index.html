@@ -59,16 +59,18 @@
     .photo img {
       width: 100%;
       height: 100%;
-      border-radius: 5px;
       object-fit: cover;
       transition: .2s linear;
       pointer-events: all;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
     }
 
     .photo:hover img {
       transform: scale(1.05);
       filter: brightness(40%);
       transition: filter 0.5s ease;
+      border-radius: 1.5em;
 
     }
 
@@ -120,13 +122,44 @@
 
 
 
+  }
 
 
+
+  /* Intro Animation */
+
+  .overlay {
+    position: absolute;
+    z-index: 999;
+    background: #0492C2;
+    width: 100%;
+    height: 100%;
+    animation: reveal 0.8s ease-in forwards;
+    transform-origin: bottom;
+  }
+
+  @keyframes reveal {
+    from {
+      transform: scaleY(1);
+    }
+
+    to {
+      transform: scaleY(0);
+    }
+  }
+
+ 
+
+  @keyframes growIn {
+    to {
+      transform: scale(1);
+    }
   }
 </style>
 
 <body>
   <!-- Header -->
+
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
@@ -141,8 +174,6 @@
           </div>
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#about" data-after="Services">About</a></li>
-
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="contact.html" data-after="Contact">Contact</a></li>
           </ul>
@@ -154,95 +185,28 @@
 
 
   <!-- Hero Section  -->
+  <div class="overlay"></div>
   <section id="hero">
     <div class="hero container">
       <div>
         <h1>Hi, <span></span></h1>
-        <h1>This Is <span></span></h1>
-        <h1>Nhi (or Esper) <span></span></h1>
+        <h1>I'm Esper (or Nhi) <span></span></h1>
+        <br>
+        <br>
+        <p>
+          <span></span> 
+        </p>
+        <p>
+          <span></span> 
+        </p>
+        <p>
+          Web Designer & Developer| Marketer based in Toronto <span></span> 
+        </p>
         <a href="#projects" type="button" class="cta">View My Projects</a>
       </div>
     </div>
   </section>
   <!-- End Hero Section  -->
-
-  <!-- About Section  -->
-  <section id="about">
-    <div class="about container">
-      <div style="width: 35%; float:left">
-        <img src="./img/avatar.png" class="box">
-      </div>
-
-      <style>
-        .box {
-          animation: wobble 4s ease infinite;
-          width: 300px;
-          height: 300px;
-          max-width: 100%;
-        }
-
-        @keyframes wobble {
-
-          0%,
-          100% {
-            -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-            -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-          }
-
-          15% {
-            -webkit-transform: translateX(-32px) rotate(-10deg);
-            transform: translateX(-32px) rotate(-10deg);
-          }
-
-          30% {
-            -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
-            transform: translateX(calc(32px / 2)) rotate(10deg);
-          }
-
-          45% {
-            -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
-            transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
-          }
-
-          60% {
-            -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
-            transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
-          }
-
-          75% {
-            -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
-            transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
-          }
-        }
-      </style>
-      <br>
-      <br>
-      <br>
-      <div style="width: 65%; float:left">
-        <div class="projects-header">
-          <h1 class="section-title" style="color: black"><b>About<span> Me </b></span></h1>
-        </div>
-        <br>
-        <br>
-
-        <p><strong>Hi, my name is Nhi Nguyen but you can also call me Esper.
-            <br>
-            <br>
-            I graduated from York University majoring in Commerce. I have more than 3 years of work experience in fast-paced environments where I had great opportunities working in Administrative, Operations and Customer Service positions.
-
-            I can work extremely well under pressure to meet deadline as demonstrated throughout academic and
-            professional
-            life. I always strive for perfection in order to achieve and exceed expectations.
-            <br>
-            <br>I am on the way to find opportunities to collaborate on different projects and
-            work in a high performing, professional team. I am ready to be challenged
-            as an individual and keen to apply my knowledge and skills. </strong>
-        </p>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -292,7 +256,7 @@
   <section id="projects" style="background-color: rgb(31, 30, 30)">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title" style="color:whitesmoke"><strong>All <span>Projects</spa></strong></h1>
+        <h1 class="section-title" style="color:whitesmoke"><strong>All <span>Projects</span></strong></h1>
       </div>
 
       <div class="gallery">
@@ -300,11 +264,11 @@
         <ul class="controls">
           <li class="buttons active" data-filter="all" style="background-color:#0492C2; color:black;font-weight:bold">
             All</li>
-          <li class="buttons" data-filter="writing">Writing Samples</li>
-          <li class="buttons" data-filter="academic">Academic Writing</li>
-          <li class="buttons" data-filter="web">HTML & CSS & JS</li>
           <li class="buttons" data-filter="design">Digital Design & Illustration</li>
+          <li class="buttons" data-filter="web">HTML & CSS & JS</li>
           <li class="buttons" data-filter="python">Python</li>
+          <li class="buttons" data-filter="academic">Academic Writing</li>
+          <li class="buttons" data-filter="writing">Writing Sample</li>
           <li class="buttons" data-filter="sql">SQL</li>
           <li class="buttons" data-filter="tableau">Tableau</li>
           <li class="buttons" data-filter="spss">SPSS</li>
@@ -319,6 +283,15 @@
           <div class="column">
 
             <div class="photo">
+              <a href="FigmadesignSample.html" class="image design">
+                <img
+                  src="https://media4.giphy.com/media/dNckfVdKOLAkfcqRD3/giphy.gif?cid=790b7611bbc40607f8326cc75952cd912ffc41b6a09789c6&rid=giphy.gif&ct=g"
+                  alt="">
+                <div class="eventDesc">Web Design </div>
+              </a>
+            </div>
+
+            <div class="photo">
               <a href="sample2.html" class="image academic">
                 <img
                   src="https://media4.giphy.com/media/dNckfVdKOLAkfcqRD3/giphy.gif?cid=790b7611bbc40607f8326cc75952cd912ffc41b6a09789c6&rid=giphy.gif&ct=g"
@@ -327,7 +300,8 @@
               </a>
             </div>
             <div class="photo">
-              <a href="https://espernguyen97.github.io/Javascript-SASS-responsive-website-Massive/" target="_blank" class="image web">
+              <a href="https://espernguyen97.github.io/Javascript-SASS-responsive-website-Massive/" target="_blank"
+                class="image web">
                 <img
                   src="https://media4.giphy.com/media/y301V1QbwVCMdyemSr/giphy.gif?cid=790b76115d94127ee2e0ea79e04b962e976dd992c926b7a9&rid=giphy.gif&ct=g"
                   alt="">
@@ -355,12 +329,13 @@
                 <img
                   src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExenNkOXNpMnJ2aG9oajJnZHIyaHl0ZGF5aTY3OHBvZDE1MG15MXl4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RJY1m8kHmclXER2p3B/giphy.gif"
                   alt="">
-                <div class="eventDesc">Writing Samples</div>
+                <div class="eventDesc">Writing Sample</div>
               </a>
             </div>
 
             <div class="photo">
-              <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank" class="image python">
+              <a href="https://github.com/espernguyen97/Python_World_Trends_Analysis.git" target="_blank"
+                class="image python">
                 <img
                   src="https://media1.giphy.com/media/RwhMjsthOYIIUElFvU/giphy.gif?cid=790b7611633eb245a6ea3af5e28c8496465d8bc9d0dee77d&rid=giphy.gif&ct=g"
                   alt="">
@@ -372,7 +347,9 @@
 
             <div class="photo">
               <a href="https://github.com/espernguyen97/Javascript-G4-Photo-Gallery" target="_blank" class="image web">
-                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG41bGRkaXVua3NqZnhuNnppdjZubWpjbjh6YjA2em1pcGM1bGRlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6DAECWc32KV9pqPRjI/giphy.gif" alt="">
+                <img
+                  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG41bGRkaXVua3NqZnhuNnppdjZubWpjbjh6YjA2em1pcGM1bGRlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6DAECWc32KV9pqPRjI/giphy.gif"
+                  alt="">
                 <div class="eventDesc">Photo Gallery </div>
               </a>
             </div>
@@ -404,7 +381,8 @@
               </a>
             </div>
             <div class="photo">
-              <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank" class=" image python">
+              <a href="https://github.com/espernguyen97/Python-US-Movies-Gross-Profit" target="_blank"
+                class=" image python">
                 <img
                   src="https://media4.giphy.com/media/Ph5JDeTR6chi94l8Ue/giphy.gif?cid=790b7611608b83b924c99b1a376d93a04d2305d153ee698d&rid=giphy.gif&ct=g"
                   alt="">
@@ -419,7 +397,7 @@
                 <img
                   src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXpjYzRjamVkYXMweDYwZmFoanY1NmUyYWgyOW50N3l4ODRxdGQ4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DCf0hXp7szxkNsaCeY/giphy.gif"
                   alt="">
-                <div class="eventDesc">Design Samples</div>
+                <div class="eventDesc">Design Sample</div>
               </a>
             </div>
             <div class="photo">
